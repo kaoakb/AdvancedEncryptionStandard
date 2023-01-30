@@ -1,0 +1,512 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "05/24/2022 22:45:42"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module wrapper (
+	enable,
+	reset,
+	clk,
+	led,
+	led256,
+	led192);
+input 	enable;
+input 	reset;
+input 	clk;
+output 	led;
+output 	led256;
+output 	led192;
+
+// Design Ports Information
+// led	=>  Location: PIN_V16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led256	=>  Location: PIN_V17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led192	=>  Location: PIN_W16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// enable	=>  Location: PIN_AE12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \clk~input_o ;
+wire \clk~inputCLKENA0_outclk ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a7 ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a6 ;
+wire \reset~input_o ;
+wire \enable~input_o ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a5 ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a4 ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a1 ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a3 ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a0~portadataout ;
+wire \over|Ram379_rtl_0|auto_generated|ram_block1a2 ;
+wire \led~0_combout ;
+wire \led~1_combout ;
+wire \led~reg0_q ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a6 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a7 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a3 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a5 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a1 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a2 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a0 ;
+wire \hi|Ram587_rtl_0|auto_generated|ram_block1a4 ;
+wire \led256~0_combout ;
+wire \led256~1_combout ;
+wire \led256~reg0_q ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a6 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a7 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a5 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a3 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a1 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a0 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a4 ;
+wire \boo|Ram223_rtl_0|auto_generated|ram_block1a2 ;
+wire \led192~0_combout ;
+wire \led192~1_combout ;
+wire \led192~reg0_q ;
+
+wire [39:0] \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
+
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a0~portadataout  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [0];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a1  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [1];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a2  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [2];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a3  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [3];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a4  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [4];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a5  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [5];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a6  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [6];
+assign \over|Ram379_rtl_0|auto_generated|ram_block1a7  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [7];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a0  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [8];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a1  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [9];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a2  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [10];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a3  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [11];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a4  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [12];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a5  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [13];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a6  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [14];
+assign \boo|Ram223_rtl_0|auto_generated|ram_block1a7  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [15];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a0  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [16];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a1  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [17];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a2  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [18];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a3  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [19];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a4  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [20];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a5  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [21];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a6  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [22];
+assign \hi|Ram587_rtl_0|auto_generated|ram_block1a7  = \over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus [23];
+
+// Location: IOOBUF_X52_Y0_N2
+cyclonev_io_obuf \led~output (
+	.i(\led~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led),
+	.obar());
+// synopsys translate_off
+defparam \led~output .bus_hold = "false";
+defparam \led~output .open_drain_output = "false";
+defparam \led~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y0_N2
+cyclonev_io_obuf \led256~output (
+	.i(\led256~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led256),
+	.obar());
+// synopsys translate_off
+defparam \led256~output .bus_hold = "false";
+defparam \led256~output .open_drain_output = "false";
+defparam \led256~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y0_N19
+cyclonev_io_obuf \led192~output (
+	.i(\led192~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led192),
+	.obar());
+// synopsys translate_off
+defparam \led192~output .bus_hold = "false";
+defparam \led192~output .open_drain_output = "false";
+defparam \led192~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N1
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G6
+cyclonev_clkena \clk~inputCLKENA0 (
+	.inclk(\clk~input_o ),
+	.ena(vcc),
+	.outclk(\clk~inputCLKENA0_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clk~inputCLKENA0 .clock_type = "global clock";
+defparam \clk~inputCLKENA0 .disable_mode = "low";
+defparam \clk~inputCLKENA0 .ena_register_mode = "always enabled";
+defparam \clk~inputCLKENA0 .ena_register_power_up = "high";
+defparam \clk~inputCLKENA0 .test_syn = "high";
+// synopsys translate_on
+
+// Location: M10K_X49_Y1_N0
+cyclonev_ram_block \over|Ram379_rtl_0|auto_generated|ram_block1a0 (
+	.portawe(vcc),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\clk~inputCLKENA0_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.nerror(vcc),
+	.portadatain(40'b0000000000000000000000000000000000000000),
+	.portaaddr({vcc}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(40'b0000000000000000000000000000000000000000),
+	.portbaddr(1'b0),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\over|Ram379_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
+	.portbdataout(),
+	.eccstatus(),
+	.dftout());
+// synopsys translate_off
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .init_file = "db/Key.rom379_InvCipher128_af37c22a.hdl.mif";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .logical_ram_name = "InvCipher128:over|altsyncram:Ram379_rtl_0|altsyncram_s8d1:auto_generated|ALTSYNCRAM";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .operation_mode = "rom";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_address_width = 1;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_data_width = 40;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_last_address = 1;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 256;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_logical_ram_width = 8;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_b_address_width = 1;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .port_b_data_width = 40;
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .ram_block_type = "M20K";
+defparam \over|Ram379_rtl_0|auto_generated|ram_block1a0 .mem_init0 = "00000000000000ABABAB";
+// synopsys translate_on
+
+// Location: IOIBUF_X4_Y0_N18
+cyclonev_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X2_Y0_N58
+cyclonev_io_ibuf \enable~input (
+	.i(enable),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\enable~input_o ));
+// synopsys translate_off
+defparam \enable~input .bus_hold = "false";
+defparam \enable~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N18
+cyclonev_lcell_comb \led~0 (
+// Equation(s):
+// \led~0_combout  = ( !\over|Ram379_rtl_0|auto_generated|ram_block1a0~portadataout  & ( !\over|Ram379_rtl_0|auto_generated|ram_block1a2  & ( (!\over|Ram379_rtl_0|auto_generated|ram_block1a5  & (!\over|Ram379_rtl_0|auto_generated|ram_block1a4  & 
+// (!\over|Ram379_rtl_0|auto_generated|ram_block1a1  & !\over|Ram379_rtl_0|auto_generated|ram_block1a3 ))) ) ) )
+
+	.dataa(!\over|Ram379_rtl_0|auto_generated|ram_block1a5 ),
+	.datab(!\over|Ram379_rtl_0|auto_generated|ram_block1a4 ),
+	.datac(!\over|Ram379_rtl_0|auto_generated|ram_block1a1 ),
+	.datad(!\over|Ram379_rtl_0|auto_generated|ram_block1a3 ),
+	.datae(!\over|Ram379_rtl_0|auto_generated|ram_block1a0~portadataout ),
+	.dataf(!\over|Ram379_rtl_0|auto_generated|ram_block1a2 ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led~0 .extended_lut = "off";
+defparam \led~0 .lut_mask = 64'h8000000000000000;
+defparam \led~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N48
+cyclonev_lcell_comb \led~1 (
+// Equation(s):
+// \led~1_combout  = ( \led~reg0_q  & ( \led~0_combout  & ( (!\reset~input_o  & \enable~input_o ) ) ) ) # ( !\led~reg0_q  & ( \led~0_combout  & ( (!\over|Ram379_rtl_0|auto_generated|ram_block1a7  & (!\over|Ram379_rtl_0|auto_generated|ram_block1a6  & 
+// (!\reset~input_o  & \enable~input_o ))) ) ) ) # ( \led~reg0_q  & ( !\led~0_combout  & ( (!\reset~input_o  & \enable~input_o ) ) ) )
+
+	.dataa(!\over|Ram379_rtl_0|auto_generated|ram_block1a7 ),
+	.datab(!\over|Ram379_rtl_0|auto_generated|ram_block1a6 ),
+	.datac(!\reset~input_o ),
+	.datad(!\enable~input_o ),
+	.datae(!\led~reg0_q ),
+	.dataf(!\led~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led~1 .extended_lut = "off";
+defparam \led~1 .lut_mask = 64'h000000F0008000F0;
+defparam \led~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X50_Y1_N49
+dffeas \led~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led~reg0 .is_wysiwyg = "true";
+defparam \led~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N24
+cyclonev_lcell_comb \led256~0 (
+// Equation(s):
+// \led256~0_combout  = ( !\hi|Ram587_rtl_0|auto_generated|ram_block1a0  & ( !\hi|Ram587_rtl_0|auto_generated|ram_block1a4  & ( (!\hi|Ram587_rtl_0|auto_generated|ram_block1a3  & (!\hi|Ram587_rtl_0|auto_generated|ram_block1a5  & 
+// (!\hi|Ram587_rtl_0|auto_generated|ram_block1a1  & !\hi|Ram587_rtl_0|auto_generated|ram_block1a2 ))) ) ) )
+
+	.dataa(!\hi|Ram587_rtl_0|auto_generated|ram_block1a3 ),
+	.datab(!\hi|Ram587_rtl_0|auto_generated|ram_block1a5 ),
+	.datac(!\hi|Ram587_rtl_0|auto_generated|ram_block1a1 ),
+	.datad(!\hi|Ram587_rtl_0|auto_generated|ram_block1a2 ),
+	.datae(!\hi|Ram587_rtl_0|auto_generated|ram_block1a0 ),
+	.dataf(!\hi|Ram587_rtl_0|auto_generated|ram_block1a4 ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led256~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led256~0 .extended_lut = "off";
+defparam \led256~0 .lut_mask = 64'h8000000000000000;
+defparam \led256~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N6
+cyclonev_lcell_comb \led256~1 (
+// Equation(s):
+// \led256~1_combout  = ( \led256~reg0_q  & ( \led256~0_combout  & ( (!\reset~input_o  & \enable~input_o ) ) ) ) # ( !\led256~reg0_q  & ( \led256~0_combout  & ( (!\hi|Ram587_rtl_0|auto_generated|ram_block1a6  & (!\hi|Ram587_rtl_0|auto_generated|ram_block1a7  
+// & (!\reset~input_o  & \enable~input_o ))) ) ) ) # ( \led256~reg0_q  & ( !\led256~0_combout  & ( (!\reset~input_o  & \enable~input_o ) ) ) )
+
+	.dataa(!\hi|Ram587_rtl_0|auto_generated|ram_block1a6 ),
+	.datab(!\hi|Ram587_rtl_0|auto_generated|ram_block1a7 ),
+	.datac(!\reset~input_o ),
+	.datad(!\enable~input_o ),
+	.datae(!\led256~reg0_q ),
+	.dataf(!\led256~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led256~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led256~1 .extended_lut = "off";
+defparam \led256~1 .lut_mask = 64'h000000F0008000F0;
+defparam \led256~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X50_Y1_N7
+dffeas \led256~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led256~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led256~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led256~reg0 .is_wysiwyg = "true";
+defparam \led256~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N30
+cyclonev_lcell_comb \led192~0 (
+// Equation(s):
+// \led192~0_combout  = ( !\boo|Ram223_rtl_0|auto_generated|ram_block1a4  & ( !\boo|Ram223_rtl_0|auto_generated|ram_block1a2  & ( (!\boo|Ram223_rtl_0|auto_generated|ram_block1a5  & (!\boo|Ram223_rtl_0|auto_generated|ram_block1a3  & 
+// (!\boo|Ram223_rtl_0|auto_generated|ram_block1a1  & !\boo|Ram223_rtl_0|auto_generated|ram_block1a0 ))) ) ) )
+
+	.dataa(!\boo|Ram223_rtl_0|auto_generated|ram_block1a5 ),
+	.datab(!\boo|Ram223_rtl_0|auto_generated|ram_block1a3 ),
+	.datac(!\boo|Ram223_rtl_0|auto_generated|ram_block1a1 ),
+	.datad(!\boo|Ram223_rtl_0|auto_generated|ram_block1a0 ),
+	.datae(!\boo|Ram223_rtl_0|auto_generated|ram_block1a4 ),
+	.dataf(!\boo|Ram223_rtl_0|auto_generated|ram_block1a2 ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led192~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led192~0 .extended_lut = "off";
+defparam \led192~0 .lut_mask = 64'h8000000000000000;
+defparam \led192~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X50_Y1_N36
+cyclonev_lcell_comb \led192~1 (
+// Equation(s):
+// \led192~1_combout  = ( \led192~reg0_q  & ( !\reset~input_o  & ( \enable~input_o  ) ) ) # ( !\led192~reg0_q  & ( !\reset~input_o  & ( (!\boo|Ram223_rtl_0|auto_generated|ram_block1a6  & (\enable~input_o  & (!\boo|Ram223_rtl_0|auto_generated|ram_block1a7  & 
+// \led192~0_combout ))) ) ) )
+
+	.dataa(!\boo|Ram223_rtl_0|auto_generated|ram_block1a6 ),
+	.datab(!\enable~input_o ),
+	.datac(!\boo|Ram223_rtl_0|auto_generated|ram_block1a7 ),
+	.datad(!\led192~0_combout ),
+	.datae(!\led192~reg0_q ),
+	.dataf(!\reset~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led192~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led192~1 .extended_lut = "off";
+defparam \led192~1 .lut_mask = 64'h0020333300000000;
+defparam \led192~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X50_Y1_N37
+dffeas \led192~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led192~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led192~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led192~reg0 .is_wysiwyg = "true";
+defparam \led192~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X45_Y5_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

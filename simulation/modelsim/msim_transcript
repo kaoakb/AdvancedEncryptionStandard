@@ -1,0 +1,121 @@
+# Reading pref.tcl
+# do Key_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/InvCipher128.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/InvCipher128.v 
+# -- Compiling module InvCipher128
+# 
+# Top level modules:
+# 	InvCipher128
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/cipher.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/cipher.v 
+# -- Compiling module cipher
+# 
+# Top level modules:
+# 	cipher
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/cipher256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/cipher256.v 
+# -- Compiling module cipher256
+# 
+# Top level modules:
+# 	cipher256
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/cipher192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/cipher192.v 
+# -- Compiling module cipher192
+# 
+# Top level modules:
+# 	cipher192
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/InvCipher256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/InvCipher256.v 
+# -- Compiling module InvCipher256
+# 
+# Top level modules:
+# 	InvCipher256
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/InvCipher192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/InvCipher192.v 
+# -- Compiling module InvCipher192
+# 
+# Top level modules:
+# 	InvCipher192
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/wrapper.v 
+# -- Compiling module wrapper
+# 
+# Top level modules:
+# 	wrapper
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/20112/Desktop/Key {C:/Users/20112/Desktop/Key/wrapper_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:46:52 on May 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/20112/Desktop/Key" C:/Users/20112/Desktop/Key/wrapper_tb.v 
+# -- Compiling module wrapper_tb
+# 
+# Top level modules:
+# 	wrapper_tb
+# End time: 16:46:52 on May 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  wrapper_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" wrapper_tb 
+# Start time: 16:46:52 on May 22,2022
+# Loading work.wrapper_tb
+# Loading work.wrapper
+# Loading work.InvCipher256
+# Loading work.cipher256
+# Loading work.cipher
+# Loading work.InvCipher128
+# Loading work.cipher192
+# Loading work.InvCipher192
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20112  Hostname: AHMEDLAPTOP  ProcessID: 3620
+#           Attempting to use alternate WLF file "./wlftxq598m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxq598m
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 16:48:02 on May 22,2022, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 2

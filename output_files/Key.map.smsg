@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at cipher.v(81): object "SubBytes" differs only in case from object "subbytes" in the same scope File: C:/Users/20112/Desktop/Key/cipher.v Line: 81
+Info (10281): Verilog HDL Declaration information at cipher256.v(119): object "SubBytes" differs only in case from object "subbytes" in the same scope File: C:/Users/20112/Desktop/Key/cipher256.v Line: 119
+Info (10281): Verilog HDL Declaration information at cipher192.v(103): object "SubBytes" differs only in case from object "subbytes" in the same scope File: C:/Users/20112/Desktop/Key/cipher192.v Line: 103
